@@ -24,7 +24,9 @@ img {
   max-width: 100%;
   height: auto;
 }
-
+.ifaq{
+  margin: 10px;  
+}
 body { 
 	background: #fff;
 	color: #424242;
@@ -1818,6 +1820,14 @@ font-size: 12px;
 .comment-reply {
 font-size: 12px;
 }
+.faq{
+    line-height: 1.9em;
+    border-style:dashed;
+    border-width: 2px;
+    background: #FFC4CB;
+    padding: 10px;
+    margin: 15px;
+}    
 ol.comment-list li p {
 margin-bottom: 5px;
 margin-top: 10px;
@@ -1874,7 +1884,7 @@ address {
 code,
 pre {
   padding: 0 3px 2px;
-  font-family: 'Microsoft YaHei',?????????,Monaco, Menlo, Consolas, "Courier New", monospace;
+  font-family: 'Microsoft YaHei',“微软雅黑”,Monaco, Menlo, Consolas, "Courier New", monospace;
   font-size: 14px;
   color: #333333;
   -webkit-border-radius: 3px;
