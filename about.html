@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/framework.css">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">   
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="https://poi.ershiwo.com/hitokoto/rand?encode=js&charset=utf-8&length=42"></script>   
     <meta name="description" content="这里是ershiwo的私人研究所|黑科技篇的关于页面。" />
 </head>
 <body>
@@ -41,8 +42,9 @@
 <div class="sticky-head"></div>
 <section class="hero small accent parallax" style="background-image: url(./img/parallax.jpg);">
   <div class="hero-content container">
-    <h1>
-      关于    </h1>
+    <h1>关于</h1>
+    <p id="hitokoto">「<script>hitokoto()</script>」</p>
+    </div>
   </div>
   <div class="sub-hero container"> <span class="line"></span> </div>
 </section>
@@ -50,24 +52,25 @@
   <div class="row">
     <div class="col-sm-12">
                 <p>这里是ershiwo的私人研究所|黑科技篇的关于页面。</p>
-				<p>如你所见这只是一个关于页面，跟其他任何玩意儿都没关系。<br/>这里的所有页面都是在虚拟机上运行的 Typecho 博客生成的。虽然更新很麻烦，但是可以节约资源（我实在不想自己做网页……），连配置什么 Node.js 的步骤都免了，直接静态页面扔上去，爱看不看。未来我会把一些见不得光的小东西全放这里，也会做一些技术实现扔上来（前提是我学会了编程）。先讲这么多，后面交给小姬处理。</p>
-				<p>目前该站点托管的业务有：<br/>
+				<p>如你所见这只是一个关于页面，跟其他任何玩意儿都没关系。<br>这里的所有页面都是在虚拟机上运行的 Typecho 博客生成的。虽然更新很麻烦，但是可以节约资源（我实在不想自己做网页……），连配置什么 Node.js 的步骤都免了，直接静态页面扔上去，爱看不看。未来我会把一些见不得光的小东西全放这里，也会做一些技术实现扔上来（前提是我学会了编程）。先讲这么多，后面交给小姬处理。</p>
+				<p>目前该站点托管的业务有：<br>
 				<ul></li>1, ershiwo的私人研究所|黑科技篇主页面。</li>
 				<li>2, ershiwo的私人研究所提供的 Shadowsocks 代理服务介绍。</li>
 				<li>3, 部分主站的图片外链需求。</li>
 				<li>4, <span style="color:red;">特别追加！</span>微软azure娘蓝泽光的<a href="https://h.ershiwo.com/sl-xmas/default.htm">圣诞夜浪漫之旅</a>！今夜你将与谁共度？</li>
-				<li>5, 增加了一个简易的类网盘页面，地址<a href="https://h.ershiwo.com/file/">file</a>，接受小文件的下载任务，个人使用，如果你不着急的话可以跟我说，我帮你下。</li></ul>
-				<br/>
-				<p>未来会开展的业务有：<br/>
+				<li>5, 增加了一个简易的类网盘页面，地址 <a href="https://h.ershiwo.com/file/">file</a>，接受小文件的下载任务，个人使用，如果你不着急的话可以跟我说，我帮你下。</li></ul>
+				<br>
+				<p>未来会开展的业务有：<br>
 				<ul></li>1, 一些新的前端代码测试。</li>
 				<li>2, 挖坑系列中提到的黑科技文件托管，以及示例媒体的播放。</li>
 				<li>3, 图站？</li>
 				<li>4, …………</li></ul></p>
-				<br/>
-				<p>服务器托管于 Vultr 东京机房。该站点下所有页面都是手工生成的，所以不会经常更新。本人动态还请关注主站点<a href="https://www.ershiwo.com/" target="_blank">ershiwo的私人研究所</a>，那里才是真正的逗比日常……如果你喜欢我们可以点个赞，对主站或这里有任何意见，可以留言或发邮件给我。联系方式我在两边到处都留了，嫌不方便就评论吧。<br/>
-				主题模板名称：Poem。来自<a href="http://www.wuyanlong.com/">wuyanlong.com</a>，部分有修改。<br/>
+				<br>
+				<p>服务器托管于 DO SFO 机房。该站点下所有页面都是手工生成的，所以不会经常更新。本人动态还请关注主站点 <a href="https://www.ershiwo.com/" target="_blank">ershiwo的私人研究所</a>，那里才是真正的逗比日常……如果你喜欢我们可以点个赞，对主站或这里有任何意见，可以留言或发邮件给我。联系方式我在两边到处都留了，嫌不方便就评论吧。<br>
+				主题模板名称：Poem。来自 <a href="http://www.wuyanlong.com/">wuyanlong.com</a>，部分有修改。<br>
+                使用了一言 API，地址：<a href="http://hitokoto.us/api.html">http://hitokoto.us/api.html</a><br>
 				题图来自 yande，编号 305788，感谢原作者！</p>
-				<br/><p>愿圣光与你同在，阿门~</p>
+				<p>愿圣光与你同在，阿门~</p>
     </div>
   </div>
   <div id="comments" class="comments">
