@@ -1,4 +1,4 @@
-﻿*,
+*,
 *:before,
 *:after {
   -webkit-box-sizing: border-box;
@@ -1670,9 +1670,10 @@ blockquote {
 	background: #f9f9f9;
 	padding: 15px 0px 15px 30px;
 	border-left: 2px solid #e9e9e9;
-	font-style: italic;
+	font-size: 18px;
 	margin-bottom: 20px;
 	margin-left: 0;
+	line-height: 26px;
 }
 .page-navigator {
 list-style: none;
@@ -1833,6 +1834,19 @@ font-size: 12px;
   max-width: 100%;
   max-height: 100%;
   vertical-align: middle;
+}
+.gp{
+    line-height: 1.9em;
+    margin: 5px 0px;
+    display: block;
+    vertical-align: middle;
+    text-align: center;
+}   
+.gp img{
+  margin:10px 0;
+  max-width: 100%;
+  max-height: 100%;
+  vertical-align: middle;
 } 
 ol.comment-list li p {
 margin-bottom: 5px;
@@ -1840,7 +1854,7 @@ margin-top: 10px;
 }
 
 blockquote {
-  padding: 0 0 0 15px;
+  padding: 0 1px 0 15px;
   margin: 0 0 20px;
   border-left: 5px solid #eeeeee;
 }
@@ -1934,4 +1948,8 @@ pre code {
 }
 .current {
 	border: 1px solid #2DB4D8;
-	}
+}
+#what-is-ss,#how-to-use,#tos,#others,#end {
+	padding-top: 68px;
+    margin-top: -68px;
+}
