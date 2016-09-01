@@ -69,7 +69,7 @@
           <li class="faq">Q：为什么配置完代理软件之后 IE 还是不能上 Google？<br><br>A：你可能需要修改 IE 的代理设置。如图，默认情况下 Shadowsocks 会自动接管代理配置，当且仅当配置不正确时，你可以考虑修改这里。<br>
           <img src="../img/faq1.png" alt="faq1"><br>配置脚本地址形如 <code>http://127.0.0.1:1080/pac?t=20151231134507</code> 的形式，<code>?t=</code> 后面接 PAC 脚本的更新时间，你也可以不加时间戳。<br>
           如果你不确定如何修改，可以尝试直接更新本地 PAC 文件，此处设置会随之修改。</li>
-          <li class="faq">Q：Chrome 应如何配置代理？<br><br>A：建议安装插件 Proxy SwitchyOmega 接管 Chrome 自身的代理设置。设置方法参考插件官方手册： <a href="https://github.com/FelisCatus/SwitchyOmega/wiki" target="_blank">link</a><br>
+          <li class="faq">Q：Chrome 应如何配置代理？<br><br>A：建议安装扩展程序 Proxy SwitchyOmega 接管 Chrome 自身的代理设置。设置方法参考扩展程序官方手册： <a href="https://github.com/FelisCatus/SwitchyOmega/wiki" target="_blank">link</a><br>
           等同于 IE，SwitchOmega 的配置可以是这样：<br>
           <img src="../img/faq2.png" alt="faq2"><br>我们选择“代理服务器”模式，输入名称后单击“创建”。<br><img src="../img/faq3.png" alt="faq3"><br>
           这里我们不使用 Shadowsocks 自带的 HTTP 转发，直接通过 SOCKS5 协议和软件通信。同样填好服务器地址和通信端口，这样就配置完成了。<br>

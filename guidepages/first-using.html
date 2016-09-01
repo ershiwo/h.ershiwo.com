@@ -87,31 +87,41 @@
                 <h4>## 安装及初始化</h4>
                 <p>下载解压至任意位置即可运行。运行 shadowsocks-csharp 最低需要 .Net 4.0 运行库，故最低支持的系统是 Windows XP SP3，但是我们建议您尽快升级到 Windows 7 SP1 以上版本。</p>
                 <p>双击运行程序，如果有任何防火墙提示请放行。在任务栏托盘区找到程序图标（纸飞机），右击图标可打开菜单。首先添加服务器。在菜单中选择“服务器 &gt; 编辑服务器”，然后可以在弹出的对话框中手动输入服务器信息。如果您希望通过扫描二维码来添加服务器，则可选择“扫描屏幕上的二维码...”并按提示操作。</p>
-                    <div class="gp"><img src="../guidepages/fs-1.png" alt="snapshot1"></div>
+                    <div class="gp"><img src="../img/guidepages/fs-1.png" alt="snapshot1"></div>
                 <p>您可能需要修改客户端本地监听的端口，请在编辑服务器时弹出的对话框中修改。请参照 <a href="/pico/faq.html" target="_blank">FAQ</a> 中的指示选择与电脑上已安装的其他应用程序不冲突的通讯端口。如果旧端口有冲突，也请参照说明排查问题并修改客户端使用的端口。</p>
-                    <div class="gp"><img src="../guidepages/fs-2.png" alt="snapshot2"></div>
+                    <div class="gp"><img src="../img/guidepages/fs-2.png" alt="snapshot2"></div>
                 <p>如果您拥有多台可用服务器，则可选择“服务器”菜单中最上方的三个选项“负载均衡”“高可用”“累计丢包率”来自动配置所使用的服务器连接。他们代表的含义分别为：<br>
                 <blockquote>负载均衡：随机选择服务器，均衡使用流量。<br>
                 高可用：根据延迟和丢包率自动选择服务器。<br>
                 累计丢包率：通过定时 ping 来测速和选择服务器。如果要使用本功能，请打开菜单里的“统计可用性”。</blockquote></p>
                 <p>单击最上方“启用系统代理”启动本地代理服务器。<br>
-                    <div class="gp"><img src="../guidepages/fs-3.png" alt="snapshot3"></div>
+                    <div class="gp"><img src="../img/guidepages/fs-3.png" alt="snapshot3"></div>
                 单击“系统代理模式”，选择“PAC 模式”。<br>
-                    <div class="gp"><img src="../guidepages/fs-4.png" alt="snapshot4"></div>
+                    <div class="gp"><img src="../img/guidepages/fs-4.png" alt="snapshot4"></div>
                 默认情况下 PAC 模式已可满足日常上网需求，并且可以保证大陆网站的访问速度。如果需要临时满足非浏览器类软件的需求，请选择“全局模式”。对于不使用系统代理设置的软件或 UDP 连接，请参考 <a href="./set-up-your-windows-client.html">Windows 客户端进阶设置</a>页面进行配置。</p>
                 <h4>## 浏览器设置</h4>
                 <blockquote><i class="fa fa-edge"></i> Internet Explorer/ Edge
                 <p>对于微软家的浏览器，其代理配置等于系统代理设置，故这里只介绍 IE 的设置方法。</p></blockquote>
-                <p>Internet Explorer 的代理设置在“Internet 选项 &gt; ‘连接’选项卡 &gt; 局域网设置”。在弹出的第二个窗口中，选中第二个复选框“使用自动配置脚本”，并填入脚本地址：<code>http://127.0.0.1/pac?t=xxxxxxxxxxxx</code>。<code>t=xxxxxxxxxxxxx</code>表示 pac 更新时间，可不填。</p>
-                <p>正常情况下 shadowsocks 客户端会自动配置代理，如果发生连接问题，请先更新 pac 列表，然后遵从 <a href="https://h.ershiwo.com/pico/faq.html">FAQ</a> 页面的提示进行排查。</p>
-                <blockquote><i class="fa fa-firefox"></i> FireFox
+                <p>Internet Explorer 的代理设置在“Internet 选项 &gt; ‘连接’选项卡 &gt; 局域网设置”。在弹出的第二个窗口中，选中第二个复选框“使用自动配置脚本”，并填入脚本地址：<code>http://127.0.0.1/pac?t=xxxxxxxxxxxx</code>。<code>t=xxxxxxxxxxxxx</code>表示 PAC 更新时间，可不填。</p>
+                <p>正常情况下 shadowsocks 客户端会自动配置代理，如果发生连接问题，请先更新 PAC 列表，然后遵从 <a href="https://h.ershiwo.com/pico/faq.html">FAQ</a> 页面的提示进行排查。</p>
+                <blockquote><i class="fa fa-firefox"></i> Mozilla FireFox
                 <p>火狐的代理配置和 IE 类似，但在配置上更加灵活，并且可以使用插件进行更详细的控制。</p></blockquote>
                 <p><i class="fa fa-tags"></i> 不需要插件的配置方案：<br>
                 打开火狐，进入设置页面，在“高级”里选择“网络”选项卡，单击“设置”按钮，即可打开火狐的代理网络设置。我们直接选择第四项“手动配置代理”，并输入配置信息。需要设置的是 “SOCKS 主机”这部分的内容，地址输入 <code>127.0.0.1</code>，端口请填写你自己的 shadowsocks 客户端使用的端口号，默认为 1080。连接类型选择“SOCKS v5”，并选中“远程 DNS”。<br>
                 下面“不使用代理”的文本框中可以填入不需要代理的 IP 地址或域名。需要注意的是，选择“手动配置代理”表示浏览器产生的所有流量都会经过节点服务器转发，因此，如果你需要管理你的路由器或访问自家的 NAS 等内网设备，请添加其 IP 段，一般为 <code>192.168.1.1/24</code>。</p>
                 <p><i class="fa fa-tags"></i> 使用 <strong>Pan</strong> 控制火狐的代理设置：<br>
-                <p><i class="fa fa-warning"></i> 注意：因为 FireFox Beta 中 FoxProxy 及 AutoProxy 等插件无法正常使用，所以以 Pan 为例介绍功能实现。Pan 的代理功能是基于 AutoProxy2 实现的，所以在设置上有相似之处，可参考配置。</p>
-                首先右键单击 Pan 图标，在弹出的菜单里选择“编辑代理服务器”,输入对应的内容。需要注意的是要把“远程DNS”的复选框选中。</p>
+                <p><i class="fa fa-warning"></i> 注意：因为 FireFox Beta 中 AutoProxy 等插件无法正常使用，所以以 Pan 为例介绍功能实现。Pan 的代理功能是基于 AutoProxy2 实现的，所以在设置上有相似之处，可参考配置。其实我一开始是用 FoxProxy 的。</p>
+                首先右键单击 Pan 图标，在弹出的菜单里选择“编辑代理服务器”，输入对应的内容。需要注意的是要把“远程DNS”的复选框选中。因为网络数据都经过代理服务器转发，所以使用服务器的 DNS 会更合理，而且也可以保证域名查询数据的传输安全，防止域名污染。<br>
+                接着启用配置。如果你需要 PAC ，请在插件中订阅 GFWList 或对应列表。在 Pan 右键菜单中选择“过滤规则首选项…”，打开设置对话框，单击“添加过滤规则订阅组…”，单击下拉列表，找到粗体的“[proxy]GfwList (中文)”并选中，单击“确定”按钮，即可使用 PAC 列表。<br>
+                然后再次右击 Pan 图标，选择“选择代理服务器”，在弹出的对话框中设置代理方式。一个可能的示例：<br>
+                <div class="gp"><img src="../img/guidepages/fs-.png" alt="example settings"></div>
+                示例中“SS”代表你已配置的 shadowsocks 连接，对不同的应用场景，可以选择是否经过代理服务器。请根据实际需求进行配置。<br>
+                Pan 有三种模式，可使用左键单击切换。灰色图标代表遵从浏览器代理设置，蓝色图标代表遵从 PAC 列表，绿色图标代表全局代理。而且因为 Pan 不能很好的支持自定义 IP 白名单，所以我们建议您在使用 Pan 时同时设置好浏览器自身的默认代理方式，以免为使用带来不便。<br>
+                此外 Pan 也可以过滤广告，您可以搜索相关使用说明。</p>
+                <blockquote><i class="fa fa-chrome"></i> Google Chrome
+                <p>Chrome 的代理配置与系统相同，我们推荐使用扩展程序管理代理设置。</p></blockquote>
+                <p><i class="fa fa-tags"></i>我们推荐使用 Proxy SwitchOmega 进行管理。商店地址：<a href="https://chrome.google.com/webstore/detail/proxy-switchyomega/padekgcemlokbadohgkifijomclgjgif?utm_campaign=en&utm_source=en-et-na-us-oc-webstrext&utm_medium=et">Chrome 应用商店</a><br>
+                请参照 <a href="/pico/faq.html" target="_blank">FAQ</a> 页面进行设置，此处不再赘述。</p>
             </div>
         </div>
     </div>
