@@ -91,7 +91,7 @@ h3 {
 h4 {
 	font-size: 13px;
 	letter-spacing: 0em;
-	text-transform: uppercase;	
+	text-transform: uppercase;
 }
 
 h5 {
@@ -1954,4 +1954,24 @@ pre code {
 #what-is-ss,#how-to-use,#tos,#others,#end {
 	padding-top: 68px;
     margin-top: -68px;
+}
+.content-child{
+	border: 1px solid #ccc;
+	background: #fff;
+	border-radius: 6px;
+	box-shadow: 0 2px 0 0 #e5e5e5;
+	margin: 0 0 2em 0;
+	padding: 1.5em;
+}
+.content-c2{
+	margin: 0.2em;
+}
+.content-c3{
+	border-left: 2px solid #999;
+	padding: 0 0 0 1em;
+}
+hr {
+    border: 0;
+    border-bottom: solid 2px #a2a2a2;
+    margin: 2em 0;
 }
