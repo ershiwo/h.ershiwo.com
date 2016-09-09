@@ -101,18 +101,18 @@
                 <p>在这里您可以找到该服务器的连接信息。下面依次说明用途。</p>
                 <p>## 配置Json：</p>
                 <p>如果您使用 GNU/Linux 下的命令行模式 shadowsocks 客户端（如 shadowsocks-go 或 shadowsocks-python）或在路由器上启用 shadowsocks，则可通过载入 config.json 的方式启动客户端。以 shadowsocks-go 为例：<br>
-                <pre>
-                user@test-vm:~# cat &gt;&gt; "EOF" &lt; ~/conf/config.json
-                { 
-                "server":"node server ip",
-                "server_port":443,
-                "local_port":1080,
-                "password":"123456",
-                "timeout":600,
-                "method":"aes-256-cfb"
-                }
-                EOF
-                user@test-vm:~# shadowsocks-local -c ~/conf/config.json</pre>
+<pre>
+user@test-vm:~# cat &gt;&gt; "EOF" &lt; ~/conf/config.json
+{ 
+"server":"node server ip",
+"server_port":443,
+"local_port":1080,
+"password":"123456",
+"timeout":600,
+"method":"aes-256-cfb"
+}
+EOF
+user@test-vm:~# shadowsocks-local -c ~/conf/config.json</pre>
                    具体请参考后文或相关 wiki。
                 </p>
                 <p>## 配置二维码：</p>
