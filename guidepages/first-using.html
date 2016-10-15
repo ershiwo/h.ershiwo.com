@@ -3,6 +3,7 @@
 
 <head>
     <!--version alpha 0.0.1 not completed-->
+    <!--flarum bbs framework-->
     <link rel="shortcut icon" href="https://dn-eblog.qbox.me/wp-content/themes/SteinsGate/favicon.ico">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -10,7 +11,7 @@
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/framework.css">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css">
     <meta name="description" content="+1s" />
 </head>
 
@@ -72,22 +73,19 @@
                 </blockquote>
                 <div class="gp"><img src="../img/why-live.jpg" alt="+1s"></div>
                 <blockquote>人呐就都不知道，自己就不可以预料。你一个人的命运啊，当然要靠自我奋斗，但是也要考虑到历史的行程，我绝对不知道，我作为一个上海市委书记怎么把我选到北京去了，所以邓小平同志跟我讲话，说“中央都决定啦，你来当总书记”，我说另请高明吧。我实在我也不是谦虚，我一个上海市委书记怎么到北京来了呢？但是呢，小平同志讲“大家已经研究决定了”，所以后来我就念了两首诗，叫“苟利国家生死以，岂因祸福避趋之”，那么所以我就到了北京。</blockquote>
-                <p><del>请手动无视上面这段话。</del>本页面将指导您如何配置本地 Shadowsocks 客户端。在 Windows 设备上我们推荐使用 shadowsocks-csharp，GNU/Linux 推荐使用 Shadowsocks-qt，MacOS X 设备推荐使用 ShadowsocksX，安卓设备推荐使用 影梭 ，iOS 设备推荐使用 shadowsocks-iOS。</p>
-                <p>相关软件的下载地址：<br>
-                    <br>
-                    <br>
-                    <br></p>
+                <p><del>请手动无视上面这段话。</del>本页面将指导您如何配置本地 Shadowsocks 客户端。在 Windows 设备上我们推荐使用 shadowsocks-csharp，GNU/Linux 推荐使用 Shadowsocks-qt，macOS 设备推荐使用 ShadowsocksX，安卓设备推荐使用 影梭 ，iOS 设备推荐使用 shadowsocks-iOS。</p>
+                <p>相关软件的下载地址：<a href="https://hx.ershiwo.com/download" class="button gray"><i class="fa fa-download"></i> 下载</a></p>
                 <p>因为管理员没钱白苹果/买肾机/用安德猴，以下教程只包含 Windows 和 GNU/Linux 环境下的客户端设置方法。人权机请考虑通过电脑中转或配置路由器，关于 OpenWRT 的配置请自行寻找教程。</p>
             </div>
             <div class="col-sm-12">
                 <h3>#1 Windows 配置</h3>
-                <p><i class="fa fa-tags"></i> 目前 shadowsocks-csharp 的最新版本是 v3.2。<br> 我们仅以 2.5.8 版本举例，此版本以后的操作大同小异。</p>
+                <p><i class="fa fa-tags"></i> 目前 shadowsocks-csharp 的最新版本是 v3.3。<br> 我们仅以 2.5.8 版本举例，此版本以后的操作大同小异。</p>
                 <div class="content-child">
                     <h4>## 安装及初始化</h4>
                     <p>下载解压至任意位置即可运行。运行 shadowsocks-csharp 最低需要 .Net 4.0 运行库，故最低支持的系统是 Windows XP SP3，但是我们建议您尽快升级到 Windows 7 SP1 以上版本。</p>
                     <p>双击运行程序，如果有任何防火墙提示请放行。在任务栏托盘区找到程序图标（纸飞机），右击图标可打开菜单。首先添加服务器。在菜单中选择“服务器 &gt; 编辑服务器”，然后可以在弹出的对话框中手动输入服务器信息。如果您希望通过扫描二维码来添加服务器，则可选择“扫描屏幕上的二维码...”并按提示操作。</p>
                     <div class="gp"><img src="../img/guidepages/fs-1.png" alt="snapshot1"></div>
-                    <p>您可能需要修改客户端本地监听的端口，请在编辑服务器时弹出的对话框中修改。请参照 <a href="/pico/faq.html" target="_blank">FAQ</a> 中的指示选择与电脑上已安装的其他应用程序不冲突的通讯端口。如果旧端口有冲突，也请参照说明排查问题并修改客户端使用的端口。</p>
+                    <p>您可能需要修改客户端本地监听的端口，请在编辑服务器时弹出的对话框中修改。可参照 <a href="../pico/faq.html" target="_blank">FAQ</a> 中的指示选择与电脑上已安装的其他应用程序不冲突的通讯端口。如果旧端口有冲突，也请参照说明排查问题并修改客户端使用的端口。</p>
                     <div class="gp"><img src="../img/guidepages/fs-2.png" alt="snapshot2"></div>
                     <p>如果您拥有多台可用服务器，则可选择“服务器”菜单中最上方的三个选项“负载均衡”“高可用”“累计丢包率”来自动配置所使用的服务器连接。他们代表的含义分别为：<br>
                         <blockquote>负载均衡：随机选择服务器，均衡使用流量。<br>
@@ -106,7 +104,9 @@
                             <p>对于微软家的浏览器，其代理配置等于系统代理设置，故这里只介绍 IE 的设置方法。</p>
                         </blockquote>
                         <p>Internet Explorer 的代理设置在“Internet 选项 &gt; ‘连接’选项卡 &gt; 局域网设置”。在弹出的第二个窗口中，选中第二个复选框“使用自动配置脚本”，并填入脚本地址：<code>http://127.0.0.1/pac?t=xxxxxxxxxxxx</code>。<code>t=xxxxxxxxxxxxx</code>表示 PAC 更新时间，可不填。</p>
+                        <div class="gp"><img src="../img/guidepages/fs-5.png" alt="ie-settings"></div>
                         <p>正常情况下 shadowsocks 客户端会自动配置代理，如果发生连接问题，请先更新 PAC 列表，然后遵从 <a href="https://h.ershiwo.com/pico/faq.html">FAQ</a> 页面的提示进行排查。</p>
+                        <div class="gp"><img src="../img/guidepages/fs-6.png" alt="auto-set-proxy"></div>
                     </div>
                     <div class="content-c2">
                         <blockquote><i class="fa fa-firefox"></i> Mozilla FireFox
@@ -114,15 +114,18 @@
                         </blockquote>
                         <p><i class="fa fa-tags"></i> 不需要附加组件的配置方案：<br>
                             <div class="content-c3">打开火狐，进入设置页面，在“高级”里选择“网络”选项卡，单击“设置”按钮，即可打开火狐的代理网络设置。我们直接选择第四项“手动配置代理”，并输入配置信息。需要设置的是 “SOCKS 主机”这部分的内容，地址输入 <code>127.0.0.1</code>，端口请填写你自己的 shadowsocks 客户端使用的端口号，默认为 1080。连接类型选择“SOCKS v5”，并选中“远程 DNS”。<br>
-                            下面“不使用代理”的文本框中可以填入不需要代理的 IP 地址或域名。需要注意的是，选择“手动配置代理”表示浏览器产生的所有流量都会经过节点服务器转发，因此，如果你需要管理你的路由器或访问自家的 NAS 等内网设备，请添加其 IP 段，一般为 <code>192.168.1.1/24</code>。</div>
+                            下面“不使用代理”的文本框中可以填入不需要代理的 IP 地址或域名。需要注意的是，选择“手动配置代理”表示浏览器产生的所有流量都会经过节点服务器转发，因此，如果你需要管理你的路由器或访问自家的 NAS 等内网设备，请添加其 IP 段，一般为 <code>192.168.1.1/24</code>。
+                            <div class="gp"><img src="../img/guidepages/fs-7.png" alt="fx-settings"></div></div>
                         </p>
                         <p><i class="fa fa-tags"></i> 使用 <strong>Pan</strong> 控制火狐的代理设置：<br>
                             <div class="content-c3">
                                 <p><i class="fa fa-warning"></i> 注意：因为 FireFox Beta 中 AutoProxy 等附加组件无法正常使用，所以以 Pan 为例介绍功能实现。Pan 的代理功能是基于 AutoProxy2 实现的，所以在设置上有相似之处，可参考配置。</p>
                                 首先右键单击 Pan 图标，在弹出的菜单里选择“编辑代理服务器”，输入对应的内容。需要注意的是要把“远程DNS”的复选框选中。因为网络数据都经过代理服务器转发，所以使用服务器的 DNS 会更合理，而且也可以保证域名查询数据的传输安全，防止域名污染。<br>
+                                <div class="gp"><img src="../img/guidepages/fs-8.png" alt="addon-settings"></div>
                                 接着启用配置。如果你需要 PAC ，请在插件中订阅 GFWList 或对应列表。在 Pan 右键菜单中选择“过滤规则首选项…”，打开设置对话框，单击“添加过滤规则订阅组…”，单击下拉列表，找到粗体的“[proxy]GfwList (中文)”并选中，单击“确定”按钮，即可使用 PAC 列表。<br>
+                                <div class="gp"><img src="../img/guidepages/fs-9.png" alt="pac-settings"></div>
                                 然后再次右击 Pan 图标，选择“选择代理服务器”，在弹出的对话框中设置代理方式。一个可能的示例：<br>
-                                <div class="gp"><img src="../img/guidepages/fs-.png" alt="example settings"></div>
+                                <div class="gp"><img src="../img/guidepages/fs-10.png" alt="example-settings"></div>
                                 示例中“SS”代表你已配置的 shadowsocks 连接，对不同的应用场景，可以选择是否经过代理服务器。请根据实际需求进行配置。<br>
                                 Pan 有三种模式，可使用左键单击切换。灰色图标代表遵从浏览器代理设置，蓝色图标代表遵从 PAC 列表，绿色图标代表全局代理。而且因为 Pan 不能很好的支持自定义 IP 白名单，所以我们建议您在使用 Pan 时同时设置好浏览器自身的默认代理方式，以免为使用带来不便。<br>
                                 此外 Pan 也可以过滤广告，您可以搜索相关使用说明。</div>
@@ -133,7 +136,7 @@
                             <p>Chrome 的代理配置与系统相同，我们推荐使用扩展程序管理代理设置。</p>
                         </blockquote>
                         <p><i class="fa fa-tags"></i> 我们推荐使用 Proxy SwitchOmega 进行管理。商店地址：<a href="https://chrome.google.com/webstore/detail/proxy-switchyomega/padekgcemlokbadohgkifijomclgjgif?utm_campaign=en&utm_source=en-et-na-us-oc-webstrext&utm_medium=et">Chrome 应用商店</a><br>
-                        请参照 <a href="/pico/faq.html" target="_blank">FAQ</a> 页面进行设置，此处不再赘述。</p>
+                        请参照 <a href="../pico/faq.html" target="_blank">FAQ</a> 页面进行设置，此处不再赘述。</p>
                     </div>
                 </div>
                 <div class="content-child">
@@ -145,17 +148,17 @@
                         <p>对于传统的 Win32 应用，如果软件内没有提供代理服务器设置选项，则其遵从系统代理设置；如果它提供了相关修改选项，则可以自由修改。以 Foobar2000 为例：<br>
                         <div class="gp"><img src="../img/faq6.png" alt="Fb2k proxy settings"></div>
                         在“参数选项 &gt; 网络”中可以更改代理设置。不过我觉得对这么一个本地播放器来说修改这个设置没啥用。<br>
-                        部分软件并没有提供代理设置，如果您需要强制其使用代理服务器，可以修改 shadowslocks 的代理方式为“全局”或在路由器上配置全局代理。而对 Steam 游戏下载这类无法直接使用 shadowsocks 全局代理的应用场景，除在路由器上配置之外，您也可以使用 Proxifier 这样的软件强制其使用代理服务器。相关操作请参见 <a href="./set-up-your-windows-client.html" target="_blank">windows 客户端进阶设置</a>页面。</p>
+                        部分软件并没有提供代理设置，如果您需要强制其使用代理服务器，可以修改 shadowsocks 的代理方式为“全局”或在路由器上配置全局代理。而对 Steam 游戏下载这类无法直接使用 shadowsocks 全局代理的应用场景，除在路由器上配置之外，您也可以使用 Proxifier 这样的软件强制其使用代理服务器。相关操作请参见 <a href="./set-up-your-windows-client.html" target="_blank">Windows 客户端进阶设置</a>页面。</p>
                     </div>
                     <div class="content-c2">
-                        <blockquote><i class="fa fa-hand-pointer-o"></i> Univesal Windows Platform 应用</blockquote>
+                        <blockquote><i class="fa fa-hand-pointer-o"></i> Windows 商店应用</blockquote>
                         <p><i class="fa fa-unlock"></i> 此部分对 Windows 8/8.1/10 用户均有效。<br>
-                        由于 Windows 通用应用的权限设置，除极少数 app 之外，其他  app 均不能访问 loopback 地址，因此也就不能访问本地的 shadowsocks 代理服务器。所以需要为有需求的 app 提供特殊权限。<br>
-                        您可以访问 <a href="/pico/faq.html" target="_blank">FAQ</a> 页面了解使用 Windows Modern Apps Tools 进行设置的方案。这里介绍如何使用 Fiddler4 启用应用访问本地环回地址的功能。<br>
+                        由于 Windows 商店应用的权限设置，除极少数 app 之外，其他  app 均不能访问 loopback 地址，因此也就不能访问本地的 shadowsocks 代理服务器。所以需要为有需求的 app 提供特殊权限。<br>
+                        您可以访问 <a href="../pico/faq.html" target="_blank">FAQ</a> 页面了解使用 Windows Modern Apps Tools 进行设置的方案。这里介绍如何使用 Fiddler4 启用应用访问本地环回地址的功能。<br>
                         首先安装 Fiddler4，<a href="https://www.telerik.com/download/fiddler/fiddler4" target="_blank">下载地址</a>。安装之后运行 Fiddler4，你会看到如下的界面：<br>
-                        <div class="gp"><img src="../img/guidepages/fs-.png" alt="snapshot"></div>
+                        <div class="gp"><img src="../img/guidepages/fs-11.png" alt="snapshot"></div>
                         单击工具栏上的 WinConfig 按钮，在弹出的设置对话框中选择需要启用此功能的 app。<br>
-                        <div class="gp"><img src="../img/guidepages/fs-.png" alt="snapshot"></div>
+                        <div class="gp"><img src="../img/guidepages/fs-12.png" alt="snapshot"></div>
                         确认之后别忘了按下“Save Changes”按钮保存设置，即时生效。</p>
                     </div>
                 </div>
@@ -164,20 +167,23 @@
             <div class="col-sm-12">
                 <h3>#2 GNU/Linux 设置</h3>
                 <p><i class="fa fa-tags"></i> 在 Linux 桌面环境中我们推荐使用 Shadowsocks-qt。</p>
-                <p>此部分内容涉及基础的 Linux 操作知识，但这并不是 Linux 用户手册。如果您不需要使用 Linux 请直接跳过此段，我们也不推荐对 Linux 完全不了解的人为了使用而使用这个系统。因为我是软狗。<br>
+                <p>此部分内容涉及基础的 Linux 操作知识，但这并不是 Linux 用户手册。如果您不需要使用 Linux 请直接跳过此段，我们也不推荐对 Linux 完全不了解的人为了使用而使用这个系统。<br>
                 仅以 Ubuntu 16.04 LTS 为例，其他 Ubuntu 衍生系统的操作大致相同，Debian 可能需要自行编译安装，其他发行版请参照 wiki 说明安装并使用。</p>
                 <div class="content-child">
                 <h4>## 安装</h4>
                 <p>打开终端，添加软件源，更新，然后安装 Shadowsocks-qt：<br>
-<pre>
+                <pre>
 sudo add-apt-repository ppa:hzwhuang/ss-qt5
 sudo apt-get update
 sudo apt-get install shadowsocks-qt5</pre>
                 然后找到 Shadowsocks-qt，启动应用并配置服务器。<br>
-                <div class="gp"><img src="../img/guidepages/fs-.png" alt="snapshot"></div>
+                <div class="gp"><img src="../img/guidepages/fs-13.png" alt="snapshot"></div>
                 （非常抱歉这是一个英文系统 (⁰▿⁰)）首先添加服务器，有四种方式：手动输入，URI 识别，扫描二维码，导入配置文件。我们以手动输入为例介绍一下添加服务器的方法。<br>
-                依次选择“Connection &gt; Add &gt; Manully”，打开添加服务器对话框。
-                </p>
+                依次选择“Connection &gt; Add &gt; Manully”，打开添加服务器对话框。<br>
+                <div class="gp"><img src="../img/guidepages/fs-14.png" alt="snapshot"></div>
+                <div class="gp"><img src="../img/guidepages/fs-15.png" alt="snapshot"></div>
+                依次填入服务器连接信息，可参考上图示例，最后单击“OK”保存。<br>
+                可以设置开机自动启动，也可以按需启动。详细就不再介绍。</p>
                 </div>
             </div>
         </div>
